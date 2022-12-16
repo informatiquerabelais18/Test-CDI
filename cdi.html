@@ -11,24 +11,24 @@ function copieChoix()
  var separ8 = "\"";
 var separ9 = " p.";
  if (document.form.livre.checked == true) {
- document.getElementById("result16").focus();
+ document.getElementById("result19").focus();
  var concat = document.getElementById("result").value.toUpperCase() + separ + document.getElementById("result2").value + separ2 + document.getElementById("result3").value.italics() + separ2 + document.getElementById("result6").value + separ + document.getElementById("result9").value + separ2 + document.getElementById("result12").value + separ9;
- document.getElementById("result16").value = concat;
+ document.getElementById("result19").value = concat;
  }
  if (document.form.chapitre.checked == true) {
- document.getElementById("result16").focus();
+ document.getElementById("result19").focus();
  var concat = document.getElementById("result").value.toUpperCase() + separ + document.getElementById("result2").value + separ2 + document.getElementById("result3").value.italics() + separ2 + document.getElementById("result6").value + separ + document.getElementById("result9").value + separ2 + document.getElementById("result7").value + separ + separ3 + document.getElementById("result13").value;
- document.getElementById("result16").value = concat;
+ document.getElementById("result19").value = concat;
  }
  if (document.form.article.checked == true) {
- document.getElementById("result16").focus();
+ document.getElementById("result19").focus();
  var concat = document.getElementById("result").value.toUpperCase() + separ + document.getElementById("result2").value + separ2 + separ8 + document.getElementById("result8").value + separ8 + separ2 + document.getElementById("result4").value.italics() + separ + separ4 + document.getElementById("result11").value + separ + document.getElementById("result9").value + separ2 + separ3 + document.getElementById("result13").value;
- document.getElementById("result16").value = concat;
+ document.getElementById("result19").value = concat;
  }
  if (document.form.web.checked == true) {
- document.getElementById("result16").focus();
+ document.getElementById("result19").focus();
  var concat = document.getElementById("result").value.toUpperCase() + separ + document.getElementById("result2").value + separ2 + separ8 + document.getElementById("result15").value + separ8 + separ2 + document.getElementById("result5").value.italics() + separ7 + separ + document.getElementById("result9").value + separ2 + separ5 + document.getElementById("result14").value + separ2 + separ6 + document.getElementById("result10").value;
- document.getElementById("result16").value = concat;
+ document.getElementById("result19").value = concat;
  }
  if ((document.form.livre.checked == false)&&(document.form.chapitre.checked == false)&&(document.form.article.checked == false)&&(document.form.web.checked == false)) {
  alert("Choississez un type de document !");
@@ -133,7 +133,7 @@ this.form.result7.style.display='inline';
 </tbody>
 </table>
 <br /><br /><input type="button" value="G&eacute;n&eacute;rer" onclick="copieChoix()" />    <input type="button" value="R&eacute;tablir les valeurs par d&eacute;faut" onclick="this.form.reset();" /> <br /><br />
-<b>3 - Copiez-collez la r&eacute;f&eacute;rence bibliographique suivante :</b><br /><br /><textarea readonly="readonly" cols="50" rows="5" id="result16"></textarea> </form><br />
+<b>3 - Copiez-collez la r&eacute;f&eacute;rence bibliographique suivante :</b><br /><br /><textarea readonly="readonly" cols="50" rows="5" id="result19"></textarea> </form><br />
 N'oubliez pas de <b>mettre en forme le titre</b> (situ&eacute; entre les balises &lt;i&gt; et &lt;/i&gt;) :<br />
 - le <u>souligner</u>, pour une bibliographie &eacute;crite &agrave; la main<br />
 - le mettre en <i>italique</i>, pour une bibliographie &agrave; l'ordinateur<br />
