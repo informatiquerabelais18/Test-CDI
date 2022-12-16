@@ -30,6 +30,11 @@ var separ9 = " p.";
  var concat = document.getElementById("result").value.toUpperCase() + separ + document.getElementById("result2").value + separ2 + separ8 + document.getElementById("result15").value + separ8 + separ2 + document.getElementById("result5").value.italics() + separ7 + separ + document.getElementById("result9").value + separ2 + separ5 + document.getElementById("result14").value + separ2 + separ6 + document.getElementById("result10").value;
  document.getElementById("result19").value = concat;
  }
+ if (document.form.video.checked == true) {
+ document.getElementById("result19").focus();
+ var concat = document.getElementById("result").value.toUpperCase() + separ + document.getElementById("result2").value + separ2 + separ8 + document.getElementById("result3").value + separ8 + separ2 + document.getElementById("result16").value.italics() + separ7 + separ + document.getElementById("result17").value + separ2 + separ5 + document.getElementById("result18").value;
+ document.getElementById("result19").value = concat;
+ }
  if ((document.form.livre.checked == false)&&(document.form.chapitre.checked == false)&&(document.form.article.checked == false)&&(document.form.web.checked == false)) {
  alert("Choississez un type de document !");
  return false
@@ -53,6 +58,9 @@ this.form.result7.style.display='none';
  this.form.result13.style.display='none';
  this.form.result14.style.display='none';
  this.form.result15.style.display='none';
+ this.form.result16.style.display='none';
+ this.form.result17.style.display='none';
+ this.form.result18.style.display='none';
  }
  return true;" id="livre" />Livre <input name="typedoc" type="radio" value="Chapitre" onclick="
  if (this.checked) {
@@ -69,6 +77,9 @@ this.form.result7.style.display='inline';
  this.form.result13.style.display='inline';
  this.form.result14.style.display='none';
  this.form.result15.style.display='none';
+ this.form.result16.style.display='none';
+ this.form.result17.style.display='none';
+ this.form.result18.style.display='none';
  }
  return true;" id="chapitre" />Chapitre <input name="typedoc" type="radio" value="Article" onclick="
  if (this.checked) {
@@ -85,6 +96,9 @@ this.form.result7.style.display='inline';
  this.form.result13.style.display='inline';
  this.form.result14.style.display='none';
  this.form.result15.style.display='none';
+ this.form.result16.style.display='none';
+ this.form.result17.style.display='none';
+ this.form.result18.style.display='none';
  }
  return true;" id="article" />Article de p&eacute;riodique (journaux, revues) <input name="typedoc" type="radio" value="Web" onclick="
  if (this.checked) {
@@ -101,6 +115,28 @@ this.form.result7.style.display='inline';
  this.form.result13.style.display='none';
  this.form.result14.style.display='inline';
  this.form.result15.style.display='inline';
+ this.form.result16.style.display='none';
+ this.form.result17.style.display='none';
+ this.form.result18.style.display='none';
+ }
+  return true;" id="video" />Vidéo en ligne <input name="typedoc" type="radio" value="Web" onclick="
+ if (this.checked) {
+ this.form.result3.style.display='inline';
+ this.form.result4.style.display='none';
+ this.form.result5.style.display='none';
+ this.form.result6.style.display='none';
+ this.form.result7.style.display='none';
+ this.form.result8.style.display='none';
+ this.form.result9.style.display='none';
+ this.form.result10.style.display='none';
+ this.form.result11.style.display='none';
+ this.form.result12.style.display='none';
+ this.form.result13.style.display='none';
+ this.form.result14.style.display='none';
+ this.form.result15.style.display='none';
+ this.form.result16.style.display='inline';
+ this.form.result17.style.display='inline';
+ this.form.result18.style.display='inline';
  }
  return true;" id="web" />Page internet <br /><br /><b>2 - Remplissez les champs suivants :</b><br />(Passez la souris sur les champs pour avoir plus d'informations)<br /><br />
 <table style="border-collapse: collapse; width: 450px; height: 80px;">
@@ -129,6 +165,11 @@ this.form.result7.style.display='inline';
 <td style="padding-top:5px;"><input size="18" value="Pagination" title="Premi&egrave;re page et derni&egrave;re page de l'article ou du chapitre, comme '12-23'." id="result13" /></td>
 <td style="padding-top:5px;"><input size="18" value="Adresse URL" title="De type 'http://www.exemple.fr/page45.html'." id="result14" /></td>
 <td style="padding-top:5px;"><input size="18" value="Titre de la page web" title="Titre de la page &agrave; l'int&eacute;rieur du site web." id="result15" /></td>
+</tr>
+<tr>
+<td style="padding-top:5px;"><input size="18" value="Titre de la Vidéo" id="result16" /></td>
+<td style="padding-top:5px;"><input size="18" value="Année d'édition" id="result17" /></td>
+<td style="padding-top:5px;"><input size="18" value="Durée de la vidéo" id="result18" /></td>
 </tr>
 </tbody>
 </table>
