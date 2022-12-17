@@ -17,22 +17,22 @@ var separ9 = " p.";
  }
  if (document.form.chapitre.checked == true) {
  document.getElementById("result19").focus();
- var concat = document.getElementById("result").value.toUpperCase() + separ + document.getElementById("result2").value + separ2 + document.getElementById("result3").value.italics() + separ2 + document.getElementById("result6").value + separ + document.getElementById("result9").value + separ2 + document.getElementById("result7").value + separ + separ3 + document.getElementById("result13").value;
+ var concat = document.getElementById("result").value + separ + document.getElementById("result2").value + separ2 + document.getElementById("result3").value.italics() + separ2 + document.getElementById("result6").value + separ + document.getElementById("result9").value + separ2 + document.getElementById("result7").value + separ + separ3 + document.getElementById("result13").value;
  document.getElementById("result19").value = concat;
  }
  if (document.form.article.checked == true) {
  document.getElementById("result19").focus();
- var concat = document.getElementById("result").value.toUpperCase() + separ + document.getElementById("result2").value + separ2 + separ8 + document.getElementById("result8").value + separ8 + separ2 + document.getElementById("result4").value.italics() + separ + separ4 + document.getElementById("result11").value + separ + document.getElementById("result9").value + separ2 + separ3 + document.getElementById("result13").value;
+ var concat = document.getElementById("result").value + separ + document.getElementById("result2").value + separ2 + separ8 + document.getElementById("result8").value + separ8 + separ2 + document.getElementById("result4").value.italics() + separ + separ4 + document.getElementById("result11").value + separ + document.getElementById("result9").value + separ2 + separ3 + document.getElementById("result13").value;
  document.getElementById("result19").value = concat;
  }
  if (document.form.web.checked == true) {
  document.getElementById("result19").focus();
- var concat = document.getElementById("result").value.toUpperCase() + separ + document.getElementById("result2").value + separ2 + separ8 + document.getElementById("result15").value + separ8 + separ2 + document.getElementById("result5").value.italics() + separ7 + separ + document.getElementById("result9").value + separ2 + separ5 + document.getElementById("result14").value + separ2 + separ6 + document.getElementById("result10").value;
+ var concat = document.getElementById("result").value + separ + document.getElementById("result2").value + separ2 + separ8 + document.getElementById("result15").value + separ8 + separ2 + document.getElementById("result5").value.italics() + separ7 + separ + document.getElementById("result9").value + separ2 + separ5 + document.getElementById("result14").value + separ2 + separ6 + document.getElementById("result10").value;
  document.getElementById("result19").value = concat;
  }
  if (document.form.video.checked == true) {
  document.getElementById("result19").focus();
- var concat = document.getElementById("result").value.toUpperCase() + separ + document.getElementById("result2").value + separ2 + document.getElementById("result3").value + separ2 + document.getElementById("result16").value + separ2 + document.getElementById("result17").value + separ2 + document.getElementById("result18").value + separ + separ6 + document.getElementById("result14").value;
+ var concat = document.getElementById("result").value + separ + document.getElementById("result2").value + separ2 + document.getElementById("result3").value + separ2 + document.getElementById("result16").value + separ2 + document.getElementById("result17").value + separ2 + document.getElementById("result18").value + separ + separ6 + document.getElementById("result14").value;
  document.getElementById("result19").value = concat;
  }
  if ((document.form.livre.checked == false)&&(document.form.chapitre.checked == false)&&(document.form.article.checked == false)&&(document.form.web.checked == false)&&(document.form.video.checked == false)) {
@@ -142,7 +142,7 @@ this.form.result7.style.display='inline';
 <table style="border-collapse: collapse; width: 450px; height: 80px;">
 <tbody>
 <tr>
-<td style="padding-top:5px;"><input size="18" value="NOM de l'auteur/réalisateur" title="Vide si l'auteur est anonyme." id="result" /></td>
+<td style="padding-top:5px;"><input size="18" value="Nom de l'auteur/réalisateur" title="Vide si l'auteur est anonyme." id="result" /></td>
 <td style="padding-top:5px;"><input size="18" value="Pr&eacute;nom de l'auteur/réalisateur" title="Vide si l'auteur est anonyme." id="result2" /></td>
 <td style="padding-top:5px;"><input size="18" value="Titre du livre/de la vidéo" id="result3" /></td>
 </tr>
