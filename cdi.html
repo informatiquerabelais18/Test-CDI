@@ -1,8 +1,4 @@
 <script type="text/javascript">
-  .italic {
-  font-style: italic;
-}
- 
 function copieChoix()
  {
  var separ = ", ";
@@ -17,7 +13,7 @@ function copieChoix()
  var separ10 = "In : "; 
  if (document.form.livre.checked == true) {
  document.getElementById("result19").focus();
- var concat = document.getElementById("result").value + separ + document.getElementById("result2").value + separ2 + document.getElementById("result3").value.classList.add("italic") + separ2 + document.getElementById("result6").value + separ + document.getElementById("result9").value + separ2 + document.getElementById("result12").value + separ9;
+ var concat = document.getElementById("result").value + separ + document.getElementById("result2").value + separ2 + document.getElementById("result3").value.style.fontStyle = "italic" + separ2 + document.getElementById("result6").value + separ + document.getElementById("result9").value + separ2 + document.getElementById("result12").value + separ9;
  document.getElementById("result19").value = concat;
  }
  if (document.form.chapitre.checked == true) {
