@@ -14,7 +14,6 @@ function copieChoix()
  if (document.form.livre.checked == true) {
  document.getElementById("result19").focus();
  var concat = document.getElementById("result").value + separ + document.getElementById("result2").value + separ2 + document.getElementById("result3").value + separ2 + document.getElementById("result6").value + separ + document.getElementById("result9").value + separ2 + document.getElementById("result12").value + separ9;
- <h1 id="result3">Ceci est un paragraphe en italique</h1>
  var element = document.getElementById("result3");
  element.style.fontStyle = "italic";
  document.getElementById("result19").value = concat;
@@ -148,7 +147,7 @@ this.form.result7.style.display='inline';
 <tr>
 <td style="padding-top:5px;"><input size="28" value="Nom de l'auteur/réalisateur" title="Vide si l'auteur est anonyme." id="result" /></td>
 <td style="padding-top:5px;"><input size="28" value="Pr&eacute;nom de l'auteur/réalisateur" title="Vide si l'auteur est anonyme." id="result2" /></td>
- <td style="padding-top:5px;"><input size="28" value="Titre du livre/de la vidéo" id="result3" /></td>
+ <td style="padding-top:5px;"><input size="28" value="Titre du livre/de la vidéo" id="result3" style="font-style: italic;" /></td>
 </tr>
 <tr>
 <td style="padding-top:5px;"><input size="28" value="Titre du p&eacute;riodique" title="Par exemple LIEN SOCIAL, Nutritioninfo..." id="result4" /></td>
