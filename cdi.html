@@ -15,6 +15,9 @@ function copieChoix()
  document.getElementById("result19").focus();
  var concat = document.getElementById("result").value + separ + document.getElementById("result2").value + separ2 + document.getElementById("result3").value + separ2 + document.getElementById("result6").value + separ + document.getElementById("result9").value + separ2 + document.getElementById("result12").value + separ9;
  document.getElementById("result19").value = concat;
+ #result3 {
+    font-style: italic;
+}
  }
  if (document.form.chapitre.checked == true) {
  document.getElementById("result19").focus();
@@ -145,9 +148,6 @@ this.form.result7.style.display='inline';
 <tr>
 <td style="padding-top:5px;"><input size="28" value="Nom de l'auteur/réalisateur" title="Vide si l'auteur est anonyme." id="result" /></td>
 <td style="padding-top:5px;"><input size="28" value="Pr&eacute;nom de l'auteur/réalisateur" title="Vide si l'auteur est anonyme." id="result2" /></td>
-#result3 {
-    font-style: italic;
-}
 <td style="padding-top:5px;"><input size="28" value="Titre du livre/de la vidéo" id="result3" class="italic" /></td> 
 </tr>
 <tr>
