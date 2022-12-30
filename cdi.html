@@ -5,13 +5,12 @@ function copieChoix()
  var separ2 = ". ";
  var separ3 = "p. ";
  var separ4 = "n° ";
- var separ5 = " Consulté le : ";
+ var separ5 = " Consulté(e) le : ";
  var separ6 = "Disponible sur : ";
  var separ7 = " [En ligne]";
  var separ8 = "\"";
  var separ9 = " p.";
  var separ10 = "In : "; 
- var separ11 = "(consulté le + date)";
  if (document.form.livre.checked == true) {
  document.getElementById("result19").focus();
  var concat = document.getElementById("result").value + separ + document.getElementById("result2").value + separ2 + document.getElementById("result3").value.italics() + separ2 + document.getElementById("result6").value + separ + document.getElementById("result9").value + separ2 + document.getElementById("result12").value + separ9;
