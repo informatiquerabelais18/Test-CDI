@@ -13,7 +13,7 @@ function copieChoix()
  var separ10 = "In : "; 
  if (document.form.livre.checked == true) {
  document.getElementById("result19").focus();
- var concat = document.getElementById("result").value + separ + document.getElementById("result2").value + separ2 + document.getElementById("result3").value + separ2 + document.getElementById("result6").value + separ + document.getElementById("result9").value + separ2 + document.getElementById("result12").value + separ9;
+ var concat = document.getElementById("result").value + separ + document.getElementById("result2").value + separ2 + document.getElementById("result3").value.italics() + separ2 + document.getElementById("result6").value + separ + document.getElementById("result9").value + separ2 + document.getElementById("result12").value + separ9;
  document.getElementById("result19").value = concat;
  }
  if (document.form.chapitre.checked == true) {
@@ -33,7 +33,7 @@ function copieChoix()
  }
  if (document.form.video.checked == true) {
  document.getElementById("result19").focus();
- var concat = document.getElementById("result").value + separ + document.getElementById("result2").value + separ2 + document.getElementById("result3").value + separ2 + document.getElementById("result16").value + separ2 + document.getElementById("result17").value + separ2 + document.getElementById("result18").value + separ + separ6 + document.getElementById("result14").value;
+ var concat = document.getElementById("result").value + separ + document.getElementById("result2").value + separ2 + document.getElementById("result3").value + separ2 + document.getElementById("result16").value + separ + document.getElementById("result17").value + separ + document.getElementById("result18").value + separ + separ6 + document.getElementById("result14").value;
  document.getElementById("result19").value = concat;
  }
  if ((document.form.livre.checked == false)&&(document.form.chapitre.checked == false)&&(document.form.article.checked == false)&&(document.form.web.checked == false)&&(document.form.video.checked == false)) {
@@ -145,7 +145,7 @@ this.form.result7.style.display='inline';
 <tr>
 <td style="padding-top:5px;"><input size="28" value="Nom de l'auteur/réalisateur" title="Vide si l'auteur est anonyme." id="result" /></td>
 <td style="padding-top:5px;"><input size="28" value="Pr&eacute;nom de l'auteur/réalisateur" title="Vide si l'auteur est anonyme." id="result2" /></td>
-<td style="padding-top:5px;"><input size="28" value="Titre du livre/de la vidéo" id="result3" style="font-style: italic;" /></td> 
+<td style="padding-top:5px;"><input size="28" value="Titre du livre/de la vidéo" id="result3" /></td> 
 </tr>
 <tr>
 <td style="padding-top:5px;"><input size="28" value="Titre du p&eacute;riodique" title="Par exemple LIEN SOCIAL, Nutritioninfo..." id="result4" /></td>
