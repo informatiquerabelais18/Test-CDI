@@ -5,36 +5,36 @@ function copieChoix()
  var separ2 = ". ";
  var separ3 = "p. ";
  var separ4 = "n° ";
- var separ5 = " Consulté(e) le : ";
- var separ6 = "Disponible sur : ";
+ var separ5 = " Consulté le : ";
+ var separ6 = "Disponible sur ";
  var separ7 = " [En ligne]";
  var separ8 = "\"";
  var separ9 = " p.";
  var separ10 = "In : "; 
  if (document.form.livre.checked == true) {
- document.getElementById("result19").focus();
+ document.getElementById("result20").focus();
  var concat = document.getElementById("result").value + separ + document.getElementById("result2").value + separ2 + document.getElementById("result3").value.italics() + separ2 + document.getElementById("result6").value + separ + document.getElementById("result9").value + separ2 + document.getElementById("result12").value + separ9;
- document.getElementById("result19").value = concat;
+ document.getElementById("result20").value = concat;
  }
  if (document.form.chapitre.checked == true) {
- document.getElementById("result19").focus();
+ document.getElementById("result20").focus();
  var concat = document.getElementById("result").value + separ + document.getElementById("result2").value + separ2 + document.getElementById("result3").value.italics() + separ2 + document.getElementById("result6").value + separ + document.getElementById("result9").value + separ2 + document.getElementById("result7").value + separ + separ3 + document.getElementById("result13").value;
- document.getElementById("result19").value = concat;
+ document.getElementById("result20").value = concat;
  }
  if (document.form.article.checked == true) {
- document.getElementById("result19").focus();
+ document.getElementById("result20").focus();
  var concat = document.getElementById("result").value + separ + document.getElementById("result2").value + separ2 + document.getElementById("result8").value + separ2 + separ10 + document.getElementById("result4").value.italics() + separ + separ4 + document.getElementById("result11").value + separ + document.getElementById("result9").value + separ2 + separ3 + document.getElementById("result13").value;
- document.getElementById("result19").value = concat;
+ document.getElementById("result20").value = concat;
  }
  if (document.form.web.checked == true) {
- document.getElementById("result19").focus();
+ document.getElementById("result20").focus();
  var concat = document.getElementById("result").value + separ + document.getElementById("result2").value + separ2 + document.getElementById("result15").value + separ2 + separ10 + document.getElementById("result5").value.italics() + separ7 + separ + document.getElementById("result9").value + separ2 + separ6 + document.getElementById("result14").value + separ2 + separ5 + document.getElementById("result10").value;
- document.getElementById("result19").value = concat;
+ document.getElementById("result20").value = concat;
  }
  if (document.form.video.checked == true) {
- document.getElementById("result19").focus();
- var concat = document.getElementById("result").value + separ + document.getElementById("result2").value + separ2 + document.getElementById("result3").value.italics() + separ2 + document.getElementById("result16").value + separ + document.getElementById("result17").value + separ + document.getElementById("result18").value + separ2 + separ6 + document.getElementById("result14").value + separ2 + separ5 + document.getElementById("result10").value;
- document.getElementById("result19").value = concat;
+ document.getElementById("result20").focus();
+ var concat = document.getElementById("result").value + separ + document.getElementById("result2").value + separ2 + document.getElementById("result19").value.italics() + separ2 + document.getElementById("result16").value + separ + document.getElementById("result17").value + separ + document.getElementById("result18").value + separ2 + separ6 + document.getElementById("result14").value + separ2 + separ5 + document.getElementById("result10").value;
+ document.getElementById("result20").value = concat;
  }
  if ((document.form.livre.checked == false)&&(document.form.chapitre.checked == false)&&(document.form.article.checked == false)&&(document.form.web.checked == false)&&(document.form.video.checked == false)) {
  alert("Choississez un type de document !");
@@ -62,6 +62,7 @@ this.form.result7.style.display='none';
  this.form.result16.style.display='none';
  this.form.result17.style.display='none';
  this.form.result18.style.display='none';
+ this.form.result19.style.display='none';
  }
  return true;" id="livre" />Livre <input name="typedoc" type="radio" value="Chapitre" onclick="
  if (this.checked) {
@@ -81,6 +82,7 @@ this.form.result7.style.display='inline';
  this.form.result16.style.display='none';
  this.form.result17.style.display='none';
  this.form.result18.style.display='none';
+ this.form.result19.style.display='none';
  }
  return true;" id="chapitre" />Chapitre <input name="typedoc" type="radio" value="Article" onclick="
  if (this.checked) {
@@ -100,6 +102,7 @@ this.form.result7.style.display='inline';
  this.form.result16.style.display='none';
  this.form.result17.style.display='none';
  this.form.result18.style.display='none';
+ this.form.result19.style.display='none';
  }
  return true;" id="article" />Article de p&eacute;riodique (journaux, revues) <input name="typedoc" type="radio" value="Web" onclick="
  if (this.checked) {
@@ -119,10 +122,11 @@ this.form.result7.style.display='inline';
  this.form.result16.style.display='none';
  this.form.result17.style.display='none';
  this.form.result18.style.display='none';
+ this.form.result19.style.display='none';
  }
  return true;" id="web" />Page internet <input name="typedoc" type="radio" value="Video" onclick="
  if (this.checked) {
- this.form.result3.style.display='inline';
+ this.form.result3.style.display='none';
  this.form.result4.style.display='none';
  this.form.result5.style.display='none';
  this.form.result6.style.display='none';
@@ -138,6 +142,7 @@ this.form.result7.style.display='inline';
  this.form.result16.style.display='inline';
  this.form.result17.style.display='inline';
  this.form.result18.style.display='inline';
+ this.form.result19.style.display='inline';
  }
  return true;" id="video" />Vidéo en ligne <br /><br /><b>2 - Remplissez les champs suivants :</b><br />(Passez la souris sur les champs pour avoir plus d'informations)<br /><br />
 <table style="border-collapse: collapse; width: 620px; height: 80px;">
@@ -145,7 +150,7 @@ this.form.result7.style.display='inline';
 <tr>
 <td style="padding-top:5px;"><input size="28" value="Nom de l'auteur/réalisateur" title="Vide si l'auteur est anonyme." id="result" /></td>
 <td style="padding-top:5px;"><input size="28" value="Pr&eacute;nom de l'auteur/réalisateur" title="Vide si l'auteur est anonyme." id="result2" /></td>
-<td style="padding-top:5px;"><input size="28" value="Titre du livre/de la vidéo" id="result3" /></td> 
+<td style="padding-top:5px;"><input size="28" value="Titre du livre" id="result3" /></td> 
 </tr>
 <tr>
 <td style="padding-top:5px;"><input size="28" value="Titre du p&eacute;riodique" title="Par exemple LIEN SOCIAL, Nutritioninfo..." id="result4" /></td>
@@ -165,17 +170,19 @@ this.form.result7.style.display='inline';
 <tr>
 <td style="padding-top:5px;"><input size="28" value="Pagination" title="Premi&egrave;re page et derni&egrave;re page de l'article ou du chapitre, comme '12-23'." id="result13" /></td>
 <td style="padding-top:5px;"><input size="28" value="Adresse URL" title="De type 'http://www.exemple.fr/page45.html'." id="result14" /></td>
-<td style="padding-top:5px;"><input size="28" value="Titre de la page web/de la vidéo" title="Titre de la page &agrave; l'int&eacute;rieur du site web." id="result15" /></td>
+<td style="padding-top:5px;"><input size="28" value="Titre de la page web ou vidéo" title="Titre de la page &agrave; l'int&eacute;rieur du site web." id="result15" /></td>
 </tr>
 <tr>
 <td style="padding-top:5px;"><input size="28" value="Producteur" id="result16" /></td>
 <td style="padding-top:5px;"><input size="28" value="Année d'édition" id="result17" /></td>
 <td style="padding-top:5px;"><input size="28" value="Durée de la vidéo" id="result18" /></td>
 </tr>
+<tr>
+<td style="padding-top:5px;"><input size="28" value="Titre de la vidéo" id="result19" /></td> 
 </tbody>
 </table>
 <br /><br /><input type="button" value="G&eacute;n&eacute;rer" onclick="copieChoix()" />    <input type="button" value="R&eacute;tablir les valeurs par d&eacute;faut" onclick="this.form.reset();" /> <br /><br />
-<b>3 - Copiez-collez la r&eacute;f&eacute;rence bibliographique suivante :</b><br /><br /><textarea readonly="readonly" cols="50" rows="5" id="result19"></textarea> </form><br />
+<b>3 - Copiez-collez la r&eacute;f&eacute;rence bibliographique suivante :</b><br /><br /><textarea readonly="readonly" cols="50" rows="5" id="result20"></textarea> </form><br />
 N'oubliez pas de <b>mettre en forme le titre</b> (situ&eacute; entre les balises &lt;i&gt; et &lt;/i&gt;) :<br />
 - le <u>souligner</u>, pour une bibliographie &eacute;crite &agrave; la main<br />
 - le mettre en <i>italique</i>, pour une bibliographie &agrave; l'ordinateur<br />
