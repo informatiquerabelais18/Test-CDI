@@ -34,7 +34,7 @@ function copieChoix()
  if (document.form.video.checked == true) {
  document.getElementById("result20").focus();
  document.getElementById("result19").style.color = "red";
- var concat = document.getElementById("result").value + separ + document.getElementById("result2").value + separ2 + <span style='color:red'> + document.getElementById("result19").value.italics() + </span> + separ2 + document.getElementById("result16").value + separ + document.getElementById("result17").value + separ + document.getElementById("result18").value + separ2 + separ6 + document.getElementById("result14").value + separ2 + separ5 + document.getElementById("result10").value;
+ var concat = document.getElementById("result").value + separ + document.getElementById("result2").value + separ2 + "<span style='color:red'>" + document.getElementById("result19").value.italics() + "</span>" + separ2 + document.getElementById("result16").value + separ + document.getElementById("result17").value + separ + document.getElementById("result18").value + separ2 + separ6 + document.getElementById("result14").value + separ2 + separ5 + document.getElementById("result10").value;
  document.getElementById("result20").value = concat;
  }
  if ((document.form.livre.checked == false)&&(document.form.chapitre.checked == false)&&(document.form.article.checked == false)&&(document.form.web.checked == false)&&(document.form.video.checked == false)) {
