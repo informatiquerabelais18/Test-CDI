@@ -1,5 +1,10 @@
 <script type="text/javascript">
 function copieChoix()
+ var link = document.createElement("link");
+    link.href = "styles.css";
+    link.type = "text/css";
+    link.rel = "stylesheet";
+    document.getElementsByTagName("head")[0].appendChild(link);
  {
  var separ = ", ";
  var separ2 = ". ";
